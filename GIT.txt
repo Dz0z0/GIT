@@ -1,0 +1,80 @@
+config:
+
+git config --global user.name "Jozef Holec"
+git config --global user.email jozefholec44@gmail.com
+git config --global init.defaultbranch main
+
+git config -h
+git help config
+
+clear
+
+change directory:
+cd c:/users/SKT-jozefh/desktop/test_project
+
+git init
+git status
+
+track (file) item:
+for example> git add index.html
+track all files: 
+git add --all
+	-A
+	.
+
+
+untrack (file) item:
+git rm --cached index.html
+
+commit:
+
+git commit -m "first commit - commiting all files to the repository"
+git commit -m "first commit - commiting all files to the repository ..." --amend / (previous)
+
+diff:
+git diff
+
+staged:
+git restore --staged indef.html
+
+
+when delete file:
+
+git restore "r.html.txt"
+
+move:
+git mv "r.html.txt" "r.txt"
+
+log (all commit):
+git log
+git log --oneline
+git log -p (keydown for scroling / all changes) = q (exit from view)
+
+git help log
+
+jump back to previous commit: 
+git reset 332081c
+
+rebasing:
+git rebase -i --root (for exit type : next x and enter)
+
+new branch:
+git branch ...
+git branch (how many branch i have)
+git switch ...
+git switch -c ... (new branch and switch it)
+
+merge:
+git merge -m "...." ... (from branch)
+
+delete branch:
+git branch -d ...
+
+push all branch
+git push --all
+
+git fetch
+git pull
+
+git remote add origin https://github.com/Dz0z0/GIT.git
+git push -u origin main
