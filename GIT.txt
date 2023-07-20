@@ -76,5 +76,4 @@ git push --all
 git fetch
 git pull
 
-git remote add origin https://github.com/Dz0z0/GIT.git
-git push -u origin main
+
